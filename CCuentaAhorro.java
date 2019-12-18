@@ -22,8 +22,10 @@ public class CCuentaAhorro extends CCuenta{
 	public void setCuotaMantenimiento(double cuotaMantenimiento) {
 		this.cuotaMantenimiento = cuotaMantenimiento;
 	}
-
-	@Override
+/**
+ * @Override
+ */
+	
 	public double interes() {
 		Calendar calendario = Calendar.getInstance();
 		if(calendario.get(Calendar.DAY_OF_MONTH)== 1) {
@@ -31,8 +33,11 @@ public class CCuentaAhorro extends CCuenta{
 		}
 		return this.saldo * this.tipoDeInteres;
 	}
-
-	@Override
+	
+/**
+ * @Override
+ */
+	
 	public void comisiones() {
 		Calendar calendario = Calendar.getInstance();
 		if(calendario.get(Calendar.DAY_OF_MONTH)== 1) {
@@ -40,6 +45,14 @@ public class CCuentaAhorro extends CCuenta{
 		}
 
 	}
+	/**
+	 * 
+	 * @param numCuenta
+	 * @param nombre
+	 * @param saldo
+	 * @param interes
+	 * @param comisiones
+	 */
 
 	public CCuentaAhorro(String numCuenta, String nombre, double saldo, double interes, double comisiones) {
 		super(numCuenta, nombre, saldo, interes, comisiones);

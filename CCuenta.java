@@ -57,7 +57,10 @@ public abstract class CCuenta{
 		public void setNumCuenta(String numCuenta) {
 			this.numCuenta = numCuenta;
 		}
-
+/**
+ * 
+ * @return
+ */
 		public String getNombre() {
 			return nombreTitular;
 		}
@@ -95,6 +98,10 @@ public abstract class CCuenta{
 		}
 		
 		//misma estructura
+		/**
+		 * 
+		 * @return
+		 */
 		public abstract double interes();
 		
 		public abstract void comisiones();

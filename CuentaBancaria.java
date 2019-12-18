@@ -2,34 +2,40 @@ package ProyectoCuentas;
 
 public class CuentaBancaria {
 	/**
-	 * 
+	 * Atributos
 	 */
-		//Atributos
+		
 		private String numCuenta;
 		private String nombre;
 		private double saldo;
 		private double interes;
 
+		
 		/**
-		 * 
+		 * constructor con parámetros	
 		 * @param numCuenta
 		 * @param nombre
 		 * @param saldo
 		 * @param interes
 		 */
-		//constructor con parámetros	
 		public CuentaBancaria(String numCuenta, String nombre, double saldo, double interes) {
 			this.numCuenta = numCuenta;
 			this.nombre = nombre;
 			this.saldo = saldo;
 			this.interes = interes;
 		}
-		//constructor por defecto, sin parámetros
+		/**
+		 * constructor por defecto, sin parámetros
+		 */
 		public CuentaBancaria() {
 			
 		}
 
 //////////////////////////
+		/**
+		 * 
+		 * @param copia
+		 */
 		public CuentaBancaria(CuentaBancaria copia){
 			interes = copia.interes;
 			nombre = copia.nombre;
@@ -38,6 +44,10 @@ public class CuentaBancaria {
 
 		 }
 //////////////////////////
+		/**
+		 * 
+		 * @return
+		 */
 		public String getNombre() {  
 			return nombre;
 		}
@@ -46,6 +56,10 @@ public class CuentaBancaria {
 	  		this.nombre = nombre;
 	  	}
 //////////////////////////
+	  	/**
+	  	 * 
+	  	 * @return
+	  	 */
 	  	public String getCuenta() {
 	  		return numCuenta;
 	  	}
@@ -65,7 +79,11 @@ public class CuentaBancaria {
 	  	public double getSaldo() {
 	  		return saldo;
 	  	}
-//////////////////////////
+///////////////////////////
+	  	/**
+	  	 * 
+	  	 * @param cantidad
+	  	 */
 	  	public void ingreso(double cantidad){
 	  		if(cantidad > 0) {
 	  			saldo = saldo + cantidad;
@@ -74,6 +92,10 @@ public class CuentaBancaria {
 	  		}
 	  	}	
 //////////////////////////
+	  	/**
+	  	 * 
+	  	 * @param cantidad
+	  	 */
 	  	public void reintegro(double cantidad){
 	  		if(cantidad > saldo){
 	  			System.err.println("El reintegro ha superado el saldo de la cuenta");
