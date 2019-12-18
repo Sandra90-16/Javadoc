@@ -11,7 +11,10 @@ public class CCuentaAhorro extends CCuenta{
 		super(numCuenta, nombre, saldo, tipoDeInteres, comisiones);
 		this.cuotaMantenimiento = cuotaMantenimiento;
 	}
-
+/**
+ * 
+ * @return
+ */
 	public double getCuotaMantenimiento() {
 		return cuotaMantenimiento;
 	}
