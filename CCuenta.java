@@ -13,7 +13,8 @@ package ProyectoCuentas;
 /**
  * 
  * @html <a href="https://github.com/Sandra90-16/Javadoc.git"</a>
- * <p><h2><b> 
+ * <p><h2>Proyecto Cuentas</p></h2>
+ * <b>Programacion</b>
  *
  */
 public abstract class CCuenta{
