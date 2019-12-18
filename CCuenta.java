@@ -29,23 +29,21 @@ public abstract class CCuenta{
 		protected double tipoDeInteres;
 		
 		/**
-		 * 
+		 * Constructores con parámetros
 		 * @param numCuenta
 		 * @param nombre
 		 * @param saldo
 		 * @param tipoDeInteres
 		 * @param comisiones
 		 */
-		//Constructores con parámetros
+	
 		public CCuenta(String numCuenta, String nombre, double saldo, double tipoDeInteres, double comisiones) {
 			this.numCuenta = numCuenta;
 			this.nombreTitular = nombre;
 			this.saldo = saldo;
 			this.tipoDeInteres = tipoDeInteres;
 		}
-		/**
-		 * @
-		 */
+		
 		//constructor por defecto, sin parámetros
 		public CCuenta() {
 			
