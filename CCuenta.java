@@ -19,9 +19,9 @@ package ProyectoCuentas;
  */
 public abstract class CCuenta{
 		/**
-		 * @
+		 * Atributos de la clase
+		 * 
 		 */
-		//Atributos
 		
 		private String numCuenta;
 		private String nombreTitular;
