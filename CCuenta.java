@@ -45,6 +45,7 @@ public abstract class CCuenta{
 		}
 		
 		//constructor por defecto, sin parámetros
+		
 		public CCuenta() {
 			
 		}

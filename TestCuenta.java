@@ -1,7 +1,10 @@
 package ProyectoCuentas;
 
 public class TestCuenta {
-
+/**
+ * 
+ * @param args
+ */
 	public static void main(String[] args) {
 	 CCuentaAhorro cliente01 = new CCuentaAhorro("111/6666","Sandra",10000, 3.5, 30);                  
 	 System.out.println(cliente01.getNombre());    
