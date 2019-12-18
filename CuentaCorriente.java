@@ -58,7 +58,10 @@ public class CuentaCorriente extends CCuenta {
 	public void setImportePorTrans(double importePorTrans) {
 		this.importePorTrans = importePorTrans;
 	}
-
+/**
+ * 
+ * @return
+ */
 	public int getTransExentas() {
 		return transExentas;
 	}
