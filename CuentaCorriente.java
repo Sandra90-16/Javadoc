@@ -8,7 +8,16 @@ public class CuentaCorriente extends CCuenta {
 	double importePorTrans;
 	int transExentas;
 	double intereses = 0;
-	
+	/**
+	 * 
+	 * @param numCuenta
+	 * @param nombre
+	 * @param saldo
+	 * @param tipoDeInteres
+	 * @param comisiones
+	 * @param importePorTrans
+	 * @param transExentas
+	 */
 	public CuentaCorriente(String numCuenta, String nombre, double saldo, double tipoDeInteres, double comisiones,
 			double importePorTrans, int transExentas) {
 		super(numCuenta, nombre, saldo, tipoDeInteres, comisiones);
